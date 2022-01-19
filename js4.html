@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        // Expected result :  [7, 7, 7, 6, 92, 11]
+        // Direction : copy arr1 last three of element without removing default length and fill the rest value with 7
+
+        const arr1 = [12, 24, 51, 6, 92, 11];
+
+        function result(arr1) {
+            // Your Code Here
+            var a = arr1.indexOf(12);
+            var b = arr1.indexOf(24);
+            var c = arr1.indexOf(51);
+             arr1[a] = 7;
+             arr1[b] = 7;
+             arr1[c] = 7;
+             return arr1;
+        }
+
+        console.log(result(arr1));
+    </script>
+
+</body>
+
+</html>
